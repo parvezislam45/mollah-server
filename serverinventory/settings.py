@@ -10,7 +10,11 @@ DEBUG = True
 #     "server.mollahmart.top",
 #     "http://127.0.0.1:8000",]
 
-ALLOWED_HOSTS =["*"]
+ALLOWED_HOSTS = [
+    "mollah-server.onrender.com",
+    "mollahmart.top",
+    "www.mollahmart.top",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -64,6 +68,7 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     "https://mollahmart.top",
     "https://www.mollahmart.top",
+    "https://mollah-client.vercel.app",
     "http://localhost:3000",   # for local dev
     "http://127.0.0.1:3000",   # for local dev
 ]
@@ -92,6 +97,7 @@ CORS_ALLOW_HEADERS = [
 CSRF_TRUSTED_ORIGINS = [
     "https://mollahmart.top",
     "https://www.mollahmart.top",
+    "https://mollah-client.vercel.app",
 ]
 MEDIA_URL='media/'
 MEDIA_ROOT = BASE_DIR/'media'
